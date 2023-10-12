@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
       "tailwind": "tailwind build -i tailwind.css -o ../style.css --watch",
-    "minify": "cleancss ../style.css -o ../style.min.css"
+      "minify": "cleancss ../style.css -o ../style.min.css",
+      "prettier": "npx prettier --write ../*.html"
+
   },
   "keywords": [],
   "author": "",

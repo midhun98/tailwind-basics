@@ -1,153 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="description" content="This is a brief summary of your web page content.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a brief summary of your web page content."
+    />
     <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Fitness</title>
-</head>
+  </head>
 
-<body>
-<div class="navbar bg-base-100" style="padding: 0 2rem;">
-    <div class="navbar-start">
+  <body>
+    <div class="navbar bg-base-100" style="padding: 0 2rem">
+      <div class="navbar-start">
         <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"/>
-                </svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Item 1</a></li>
-                <li>
-                    <a>Parent</a>
-                    <ul class="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                    </ul>
-                </li>
-                <li><a>Item 3</a></li>
-            </ul>
-        </div>
-        <a class="btn btn-ghost normal-case text-xl">Fitness</a>
-    </div>
-    <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
             <li><a>Item 1</a></li>
-            <li tabindex="0">
-                <details>
-                    <summary>Parent</summary>
-                    <ul class="p-2">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                    </ul>
-                </details>
+            <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
             </li>
             <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost normal-case text-xl">Fitness</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li tabindex="0">
+            <details>
+              <summary>Parent</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Item 3</a></li>
         </ul>
-    </div>
-    <div class="navbar-end">
-        <img src="brightness-and-contrast.png" alt="Change to dark or light mode" class="icon mr-4"
-             data-toggle-theme="dark,light" data-act-class="ACTIVECLASS">
+      </div>
+      <div class="navbar-end">
+        <img
+          src="brightness-and-contrast.png"
+          alt="Change to dark or light mode"
+          class="icon mr-4"
+          data-toggle-theme="dark,light"
+          data-act-class="ACTIVECLASS"
+        />
         <a class="btn btn-primary">Contact Us</a>
+      </div>
     </div>
-</div>
-<div class="hero min-h-screen">
-    <video autoplay muted loop class="object-cover h-full">
-        <source src="https://themewagon.github.io/training-studio/assets/images/gym-video.mp4" type="video/mp4"/>
-    </video>
-    <div class="hero-overlay bg-opacity-60"></div>
-    <div class="hero-content text-center text-neutral-content">
-        <div class="max-w-fit">
-            <h1 class="mb-5 text-xl font-bold uppercase">Work harder, get stronger</h1>
-            <h1 class="mb-5 text-7xl font-bold uppercase">easy with our gym</h1>
-            <button class="btn rounded-none border-none" style="background-color: #ed563b;">Become a member</button>
-        </div>
-    </div>
-</div>
-<section class="section" id="features">
-
-    <h1 class="mb-5 text-4xl font-bold uppercase text-center mt-4">Choose <span style="color:#ed563b ">Program</span>
-    </h1>
-    <img class="mx-auto" src="https://themewagon.github.io/training-studio/assets/images/line-dec.png" alt="">
-    <h1 class="text-center max-w-screen-md my-5 mx-auto">
-        Discover the perfect gym workout training program to achieve your fitness goals.
-        Our expert-designed programs combine strength, cardio, and flexibility exercises for maximum results.
-        Start your journey to a healthier, fitter you today!"
-    </h1>
-
-    <div class="flex flex-col lg:flex-row m-8">
-        <div class="card lg:card-side bg-base-300 shadow-xl m-6">
-            <figure><img class="m-4 object-scale-down h-48 w-96 rounded-md"
-                         src="https://images.unsplash.com/photo-1623874106686-5be2b325c8f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGJvZHklMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
-                         alt="Movie"></figure>
-            <div class="card-body">
-                <h2 class="card-title">Crossfit</h2>
-                <p>Join our CrossFit community and take your fitness to the next level.
-                    Our comprehensive guide offers valuable tips and tricks for beginners and pros alike.
-                    Get started today!</p>
-                <a href="#" class="text-button text-left" style="color: #ed563b">Discover More</a>
-            </div>
-        </div>
-        <div class="card lg:card-side bg-base-300 shadow-xl m-6">
-            <figure><img class="m-4 object-scale-down h-48 w-96 rounded-md"
-                         src="https://images.unsplash.com/photo-1620188467120-5042ed1eb5da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyb3NzZml0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-                         alt="Movie"></figure>
-            <div class="card-body">
-                <h2 class="card-title">Body Building Course</h2>
-                <p>Join our Body Building Course and learn from the best experts in the field.
-                    Take your training to the next level and prepare to compete. Enroll now!</p>
-                <a href="#" class="text-button text-left" style="color: #ed563b">Discover More</a>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
     <div class="hero min-h-screen">
-        <img src="https://themewagon.github.io/training-studio/assets/images/cta-bg.jpg" alt=""
-             class="object-none h-full">
-        <div class="text-center text-neutral-content">
-            <div class="max-w-fit">
-                <h1 class="mb-5 text-4xl font-bold uppercase">Don’t <span style="color: #ed563b">think</span>, begin
-                    <span style="color: #ed563b">today</span>!</h1>
-                <div>
-                    <p>Ready to transform your body and boost your fitness? Don't wait any longer. Start your fitness
-                        journey today at our top-notch gym. Join our community of motivated individuals and achieve your
-                        goals. Get started now!</p>
-                </div>
-            </div>
+      <video autoplay muted loop class="object-cover h-full">
+        <source
+          src="https://themewagon.github.io/training-studio/assets/images/gym-video.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-fit">
+          <h1 class="mb-5 text-xl font-bold uppercase">
+            Work harder, get stronger
+          </h1>
+          <h1 class="mb-5 text-7xl font-bold uppercase">easy with our gym</h1>
+          <button
+            class="btn rounded-none border-none"
+            style="background-color: #ed563b"
+          >
+            Become a member
+          </button>
         </div>
+      </div>
     </div>
-</section>
+    <section class="section" id="features">
+      <h1 class="mb-5 text-4xl font-bold uppercase text-center mt-4">
+        Choose <span style="color: #ed563b">Program</span>
+      </h1>
+      <img
+        class="mx-auto"
+        src="https://themewagon.github.io/training-studio/assets/images/line-dec.png"
+        alt=""
+      />
+      <h1 class="text-center max-w-screen-md my-5 mx-auto">
+        Discover the perfect gym workout training program to achieve your
+        fitness goals. Our expert-designed programs combine strength, cardio,
+        and flexibility exercises for maximum results. Start your journey to a
+        healthier, fitter you today!"
+      </h1>
 
-<section>
-    <div class="min-h-screen bg-base-200">
-        <h1 class="mb-5 text-4xl font-bold uppercase text-center mt-4">Our <span style="color:#ed563b ">Classes</span></h1>
-        <img class="mx-auto" src="https://themewagon.github.io/training-studio/assets/images/line-dec.png" alt="">
-        <p class="text-center mx-10 mt-4" >
-            Discover a variety of invigorating gym classes designed to help you reach your fitness goals. 
-            From cardio and strength training to yoga and dance, our classes offer something for everyone. 
-            Join our gym and start your fitness journey today!
+      <div class="flex flex-col lg:flex-row m-8">
+        <div class="card lg:card-side bg-base-300 shadow-xl m-6">
+          <figure>
+            <img
+              class="m-4 object-scale-down h-48 w-96 rounded-md"
+              src="https://images.unsplash.com/photo-1623874106686-5be2b325c8f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGJvZHklMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Movie"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Crossfit</h2>
+            <p>
+              Join our CrossFit community and take your fitness to the next
+              level. Our comprehensive guide offers valuable tips and tricks for
+              beginners and pros alike. Get started today!
+            </p>
+            <a href="#" class="text-button text-left" style="color: #ed563b"
+              >Discover More</a
+            >
+          </div>
+        </div>
+        <div class="card lg:card-side bg-base-300 shadow-xl m-6">
+          <figure>
+            <img
+              class="m-4 object-scale-down h-48 w-96 rounded-md"
+              src="https://images.unsplash.com/photo-1620188467120-5042ed1eb5da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNyb3NzZml0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+              alt="Movie"
+            />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Body Building Course</h2>
+            <p>
+              Join our Body Building Course and learn from the best experts in
+              the field. Take your training to the next level and prepare to
+              compete. Enroll now!
+            </p>
+            <a href="#" class="text-button text-left" style="color: #ed563b"
+              >Discover More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="hero min-h-screen">
+        <img
+          src="https://themewagon.github.io/training-studio/assets/images/cta-bg.jpg"
+          alt=""
+          class="object-none h-full"
+        />
+        <div class="text-center text-neutral-content">
+          <div class="max-w-fit">
+            <h1 class="mb-5 text-4xl font-bold uppercase">
+              Don’t <span style="color: #ed563b">think</span>, begin
+              <span style="color: #ed563b">today</span>!
+            </h1>
+            <div>
+              <p>
+                Ready to transform your body and boost your fitness? Don't wait
+                any longer. Start your fitness journey today at our top-notch
+                gym. Join our community of motivated individuals and achieve
+                your goals. Get started now!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="min-h-screen bg-base-200">
+        <h1 class="mb-5 text-4xl font-bold uppercase text-center mt-4">
+          Our <span style="color: #ed563b">Classes</span>
+        </h1>
+        <img
+          class="mx-auto"
+          src="https://themewagon.github.io/training-studio/assets/images/line-dec.png"
+          alt=""
+        />
+        <p class="text-center mx-10 mt-4">
+          Discover a variety of invigorating gym classes designed to help you
+          reach your fitness goals. From cardio and strength training to yoga
+          and dance, our classes offer something for everyone. Join our gym and
+          start your fitness journey today!
         </p>
 
         <div class="hero-content flex-col lg:flex-row-reverse m-8">
-
-            <img src="https://themewagon.github.io/training-studio/assets/images/training-image-01.jpg" class="max-w-4xl rounded-lg shadow-2xl"/>
-            <div>
-                <d
-                <img src="https://themewagon.github.io/training-studio/assets/images/tabs-first-icon.png" alt="">
-                <h1 class="text-5xl font-bold">Box Office News!</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                <button class="btn btn-primary">Get Started</button>
-            </div>
+          <img
+            src="https://themewagon.github.io/training-studio/assets/images/training-image-01.jpg"
+            class="max-w-4xl rounded-lg shadow-2xl"
+          />
+          <div>
+            <img
+              src="https://themewagon.github.io/training-studio/assets/images/tabs-first-icon.png"
+              alt=""
+            />
+            <h1 class="text-5xl font-bold">Box Office News!</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
         </div>
-    </div>
-</section>
-
-</body>
+      </div>
+    </section>
+  </body>
 </html>
